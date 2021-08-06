@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>StarBucks Coffee</title>
+</head>
+<body>
+    <!--Header Starts-->
+    <div class="header">
+        <div class="head_left">
+        <img src="./img/logo.png" alt="" width="70" height="70">
+        <ul>
+            <li >MENU</li>
+            <li>REWARDS</li>
+            <li>GIFT CARDS</li>
+        </ul>
+        </div>
+        <div class="head_right">
+            <i class="fas fa-map-marker-alt"><span>Find a Store</span></i>
+            <button class="signin">Sign in</button>
+            <button class="join_now">Join Now</button>
+        </div>
+    </div>
+    <!--header ends-->
+    <!--Starbucks Rewards-->
+    <div class="stb_rewards">
+        <h5>STARBUCKS REWARDS</h5>
+    </div>
+    <!--Starbucks Rewards-->
+    <!--Hero-->
+    <div class="Hero">
+        <div class="hero_content">
+            <h1>FREE COFFEE IS A TAP AWAY</h1>
+            <P>Join now to start earning Rewards.</P>
+            <button class="hero_join">Join now</button>
+            <p>Or <span>join in the app</span> for the best experience</p>
+        </div>
+        <img src="./img/star.webp" alt="" width="1100" height="450">
+    </div>
+    <!--Hero-->
+    <!--getting started section-->
+    <div class="getting_started_main">
+        <div class="easy_start_textarea">
+            <h2>Getting Started is easy</h2>
+            <p>Earn Stars and get rewarded in a few easy steps.</p>
+        </div>
+        <div class="steps_area">
+            <div class="steps_container">
+                <a class="circle">1</a>
+                <h2>Create an account</h2>
+                <p>To get Started, join now. You can also join in the app to get access to the full range of starbucks rewards benefits.</p>
+            </div>
+            <div class="steps_container">
+                <a class="circle">2</a>
+                <h2>Order and pay how you’d like</h2>
+                <p>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. Learn how</p>
+            </div>
+            <div class="steps_container">
+                <a class="circle">3</a>
+                <h2>Earn Stars, get Rewards</h2>
+                <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+            </div>
+        </div>
+    </div>
+    <!--getting started section-->
+    <!--favs for free-->
+    <div class="fav_section">
+        <div class="fav_heading">
+            <h1>Get your favourites for free</h1>
+            <ul>
+                <li onclick="twenty_five()" class="active" >25</li>
+                <li onclick="fifty()">50</li>
+                <li onclick="one_fifty()">150</li>
+                <li onclick="two_hun()">200</li>
+                <li onclick="four_hun()">400</li>
+            </ul>
+        </div>
+        <div class="fav_options">
+            
+                <div class="tewnty-five" id="twenty_five">
+                        <img src="./img/25.webp" alt="" width="500">
+                        <div class="headerp">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                        </div>
+                    
+                    </div>
+                <div class="fifty" id="fifty">
+                        <img src="./img/50.webp" alt="" width="500">
+                        <div class="headerp">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                    </div>
+                    </div>
+                <div class="one-fifty" id="one-fifty">
+                        <img src="./img/150.webp" alt="" width="500">
+                        <div class="headerp">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                    </div>
+                    </div>
+                <div class="two-hundred" id="two-hundred">
+                        <img src="./img/200.webp" alt="" width="500">
+                        <div class="headerp">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                    </div>
+                    </div>
+                <div class="four-hun" id="four-hun">
+                        <img src="./img/400.webp" alt="" width="500">
+                        <div class="headerp">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                    </div>
+                    </div>
+            </div>
+    </div>
+    <!--favs for free-->
+
+
+<script type="text/javascript">
+
+    function twenty_five(){
+        document.getElementById("fifty").style.display="none";
+        document.getElementById("twenty_five").style.display ="block";
+        document.getElementById("one-fifty").style.display ="none";
+        document.getElementById("two-hundred").style.display ="none";
+        document.getElementById("four-hun").style.display ="none";
+    }
+    function fifty(){
+        document.getElementById("fifty").style.display="block";
+        document.getElementById("twenty_five").style.display ="none";
+        document.getElementById("one-fifty").style.display ="none";
+        document.getElementById("two-hundred").style.display ="none";
+        document.getElementById("four-hun").style.display ="none";
+    }
+    function one_fifty(){
+        document.getElementById("one-fifty").style.display="block";
+        document.getElementById("twenty_five").style.display ="none";
+        document.getElementById("fifty").style.display ="none";
+        document.getElementById("two-hundred").style.display ="none";
+        document.getElementById("four-hun").style.display ="none";
+    }
+    function two_hun(){
+        document.getElementById("two-hundred").style.display="block";
+        document.getElementById("twenty_five").style.display ="none";
+        document.getElementById("one-fifty").style.display ="none";
+        document.getElementById("fifty").style.display ="none";
+        document.getElementById("four-hun").style.display ="none";
+    }
+    function four_hun(){
+        document.getElementById("twenty_five").style.display ="none";
+        document.getElementById("one-fifty").style.display ="none";
+        document.getElementById("fifty").style.display ="none";
+        document.getElementById("two_hun").style.display ="none";
+    }
+
+
+</script>
+
+</body>
+</html>
